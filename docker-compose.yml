@@ -1,0 +1,22 @@
+version: '3'
+services:
+    springclient:
+        build: client
+        ports:
+            - 8092:8082
+    springaccount:
+        build: account
+        ports:
+            - 8093:8083
+    springcredit:
+        build: credit
+        ports:
+            - 8094:8084
+    springoperation:
+        build: operation
+        ports:
+            - 8095:8085
+    springproduct:
+        build: client
+        ports:
+            - 8096:8086
